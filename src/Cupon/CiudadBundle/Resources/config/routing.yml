@@ -1,0 +1,6 @@
+ciudad_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CiudadBundle:Default:index }
+ciudad_nombre:
+    path:    /ciudad/{id}
+    defaults: { _controller: CiudadBundle:Default:ciudad }

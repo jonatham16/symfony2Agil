@@ -1,0 +1,11 @@
+oferta_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: OfertaBundle:Default:index }
+    
+pagina_ayuda:
+    path:     /ayuda
+    defaults: { _controller: OfertaBundle:Default:ayuda }
+    
+pagina_estatica:
+    path:     /sitio/{pagina}
+    defaults: { _controller: OfertaBundle:Sitio:estatica }
