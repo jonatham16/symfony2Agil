@@ -15,5 +15,5 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getEntityManager();
         $ciudad = $em->getRepository('CiudadBundle:Ciudad')->find($id);
         return $this->render('CiudadBundle:Default:ciudad.html.twig',array('nombre' => $ciudad->getNombre()));
-    }
+    }   
 }

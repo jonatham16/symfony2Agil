@@ -2832,6 +2832,18 @@
             <argument>false</argument>
           </argument>
         </argument>
+        <argument key="Cupon\TiendaBundle\Entity\Tienda" type="collection">
+          <argument key="class">%security.encoder.plain.class%</argument>
+          <argument key="arguments" type="collection">
+            <argument>false</argument>
+          </argument>
+        </argument>
+        <argument key="Cupon\UsuarioBundle\Entity\Usuario" type="collection">
+          <argument key="class">%security.encoder.plain.class%</argument>
+          <argument key="arguments" type="collection">
+            <argument>false</argument>
+          </argument>
+        </argument>
       </argument>
     </service>
     <service id="twig.loader" class="Symfony\Bundle\TwigBundle\Loader\FilesystemLoader">

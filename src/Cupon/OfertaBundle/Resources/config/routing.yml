@@ -9,3 +9,7 @@ pagina_ayuda:
 pagina_estatica:
     path:     /sitio/{pagina}
     defaults: { _controller: OfertaBundle:Sitio:estatica }
+
+portada:
+    path:     /
+    defaults: { _controller: OfertaBundle:Default:portada }
