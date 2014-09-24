@@ -19,6 +19,6 @@ class SitioController extends Controller{
     
     public function  estaticaAction($pagina)
     {        
-        return $this->render('OfertaBundla:Sitio:'.$pagina.'.html.twig');
+        return $this->render('OfertaBundle:Sitio:'.$pagina.'.html.twig');
     }
 }
