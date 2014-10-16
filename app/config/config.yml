@@ -69,4 +69,4 @@ swiftmailer:
     spool:     { type: memory }
 
 parameters:
-    cupon.ciudad_por_defecto: '202'
+    cupon.ciudad_por_defecto: 'arrasa'

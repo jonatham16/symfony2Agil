@@ -21,9 +21,15 @@ class DefaultController extends Controller
         
         $em = $this->getDoctrine()->getEntityManager();
         
-        $oferta = $em->getRepository('OfertaBundle:Oferta')->findOneBy(array(
+        /*$oferta = $em->getRepository('OfertaBundle:Oferta')->findOneBy(array(
                 'ciudad' => $this->container->getParameter('cupon.ciudad_por_defecto')    
             ));
+         * 
+         */
+        $oferta = $em->getRepository('OfertaBundle:Oferta')->findOfertaDelDia('cupon.ciudad_por_defecto');
+        if(!$oferta)
+            throw $this->createNotFoundException ('No se encontron ninguuna oferta');
+            
         return $this->render('OfertaBundle:Default:portada.html.twig',array('oferta' => $oferta));
     }
 }
