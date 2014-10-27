@@ -21,3 +21,7 @@ _portada:
 oferta:
     path:     /{ciudad}/ofertas/{slug}
     defaults: { _controller: OfertaBundle:Default:oferta }
+    
+ciudad_recientes:
+    path:    /{ciudad}/recientes
+    defaults: { _controller: OfertaBundle:Default:recientes }
